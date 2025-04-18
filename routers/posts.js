@@ -10,7 +10,7 @@ router.get('/', function(req,res){
 
 //rotta per operazione show
 router.get('/:id', function (req,res){
-    res.send('dettaglio del post' + req.params.id);
+    res.send('dettaglio del post:' + req.params.id);
 });
 
 //rotta per operazione store
@@ -20,15 +20,15 @@ router.post('/', function (req,res){
 
 //rotta per operazione update
 router.put('/:id', function(req,res){
-    res.send('Modifica integrale del post' + req.params.id)
+    res.send('Modifica integrale del post:' + req.params.id)
 })
 //rotta per operazione modify
 router.patch('/:id', function(req,res){
-    res.send('modifica parziale del post'+ req.params.id)
+    res.send('Modifica parziale del post:'+ req.params.id)
 })
 //rotta per operazione destroy
 router.delete('/:id', function(req,res){
-    res.send('Eliminazione del post'+ req.params.id)
+    res.send('Eliminazione del post:'+ req.params.id)
 })
 
 //esporto l'istanza di router
