@@ -15,5 +15,13 @@ router.get('/:id', function (req,res){
 
 //rotta per operazione store
 router.post('/', function (req,res){
-    res.send('Creazione nuovo elemento')
+    res.send('Creazione nuovo post')
 });
+
+//rotta per operazione update
+router.put('/:id', function(req,res){
+    res.send('Modifica integrale del post' + req.params.id)
+})
+//rotta per operazione modify
+
+//rotta per operazione destroy
