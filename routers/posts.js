@@ -9,3 +9,6 @@ router.get('/', function(req,res){
 })
 
 //rotta per operazione show
+router.get('/:id', function (req,res){
+    res.send('dettaglio del post' + req.params.id);
+})
