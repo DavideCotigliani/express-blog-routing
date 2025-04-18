@@ -1,16 +1,19 @@
 //importo express
-const express= require('express')
+const express= require('express');
+//importo gli array
+const arrayPosts = require('../arraydipost.js')
+arrayPosts.posts
 //creo variabile router il cui valore sarà un'istanza di express.router()
 const router = express.Router();
 
 //rotta per operazione index
 router.get('/', function(req,res){
-    res.send('Lista dei post')
+    res.json(arrayPosts)
 });
 
 //rotta per operazione show
 router.get('/:id', function (req,res){
-    res.send('dettaglio del post:' + req.params.id);
+    res.send('Visualizza nuovo post')
 });
 
 //rotta per operazione store

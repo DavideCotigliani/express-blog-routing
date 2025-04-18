@@ -5,7 +5,7 @@ const port= 4000;
 app.use(express.static('public'));
 
 app.get("/",(req,res)=>{
-    res.send("ciao a tutti")
+    console.log('ciao per i post');
 })
 
 //importo il router
