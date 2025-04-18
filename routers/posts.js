@@ -23,5 +23,13 @@ router.put('/:id', function(req,res){
     res.send('Modifica integrale del post' + req.params.id)
 })
 //rotta per operazione modify
-
+router.patch('/:id', function(req,res){
+    res.send('modifica parziale del post'+ req.params.id)
+})
 //rotta per operazione destroy
+router.delete('/:id', function(req,res){
+    res.send('Eliminazione del post'+ req.params.id)
+})
+
+//esporto l'istanza di router
+module.exports = router;
